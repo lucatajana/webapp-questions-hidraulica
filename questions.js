@@ -175,6 +175,16 @@ const questions = [
   { text: "In an M type channel: A hydraulic jump cannot exist.", answer: "F" },
   { text: "In an M type channel: If the water depth is lower than the normal depth (uniform flow depth), the friction slope is larger than the geometric slope.", answer: "V" },
   { text: "In an M type channel: If the flow is subcritical and there is a step that implies a raise of the channel bottom in the direction of the flow, the depth will decrease locally in the surroundings of the step.", answer: "V" },
+  { text: "Under conditions of constant pressure and temperature, the viscosity of a Newtonian fluid is constant.", answer: "V" },
+  { text: "Water can behave as a Newtonian fluid.", answer: "V" },
+  { text: "On Earth, the vapour pressure of water increases with the altitude.", answer: "F" },
+  { text: "The boiling temperature of water depends on the difference between the absolute pressure and the vapour pressure.", answer: "V" },
+  { text: "The specific weight can be measured in kg/(cm²·s²).", answer: "V" },
+  { text: "To study the most usual hydraulic problems, water can be considered to be an incompressible fluid.", answer: "V" },
+  { text: "The phenomenon of cavitation can be responsible for the deterioration of a hydraulic structure.", answer: "V" },
+  { text: "Thanks to the surface tension, some insects can walk over the water surface.", answer: "V" },
+  { text: "If the water jet of a firefighter hose can reach the fourth floor of a building, the energy of the jet is larger than 80 J for each litre of water.", answer: "V" },
+  
 ];
 shuffleArray(questions);
 
