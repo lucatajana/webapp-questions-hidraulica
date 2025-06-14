@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>True/False Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #f4f4f4;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+    }
+    .question-box {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    .buttons {
+      margin-bottom: 20px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+    .true-btn { background-color: #2ecc71; color: white; }
+    .false-btn { background-color: #e74c3c; color: white; }
+    .nav-btn { background-color: #3498db; color: white; }
+    .feedback {
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>True/False Quiz</h1>
+  <div class="question-box">
+    <p id="question"></p>
+  </div>
+  <div class="buttons">
+    <button class="true-btn" onclick="checkAnswer('V')">True</button>
+    <button class="false-btn" onclick="checkAnswer('F')">False</button>
+  </div>
+  <div class="feedback" id="feedback"></div>
+  <button class="nav-btn" onclick="prevQuestion()">Previous</button>
+  <button class="nav-btn" onclick="nextQuestion()">Next</button>
+
+  <script src="questions.js"></script>
+</body>
+</html>
