@@ -1,3 +1,10 @@
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 const questions = [
   { text: "The density of water under normal conditions of pressure and temperature, in the International System of Units, is 1.", answer: "F" },
   { text: "The density of water is the same on the Moon as on Mars.", answer: "V" },
@@ -169,6 +176,8 @@ const questions = [
   { text: "In an M type channel: If the water depth is lower than the normal depth (uniform flow depth), the friction slope is larger than the geometric slope.", answer: "V" },
   { text: "In an M type channel: If the flow is subcritical and there is a step that implies a raise of the channel bottom in the direction of the flow, the depth will decrease locally in the surroundings of the step.", answer: "V" },
 ];
+shuffleArray(questions);
+
 
 let currentQuestion = 0;
 
